@@ -19,7 +19,7 @@
 var expdate = new Date();
 var endroit = 1;
 var ou = 0;
-expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));  
+expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));
 var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
 
 function getCookieVal (offset) {
@@ -45,16 +45,16 @@ function rendu(cookieName) {
 function episode1(){
 	var EPISODEObj = InternetExplorer ? EPISODE : document.EPISODE;
     var SaveGame = GetCookie("ARC1");
-    
+
 	if (SaveGame == "1") {
 		EPISODEObj.GotoFrame(1032);
 	}
 	else if (SaveGame == "2") {
 		EPISODEObj.GotoFrame(1035);
-	}	
+	}
 	else if (SaveGame == "3") {
 		EPISODEObj.GotoFrame(1038);
-	}	
+	}
 	else if (SaveGame == "4")
 		{
 		EPISODEObj.GotoFrame(1041);
@@ -62,7 +62,7 @@ function episode1(){
 	else if (SaveGame == "5")
 		{
 		EPISODEObj.GotoFrame(1044);
-	}	
+	}
  	else {
       alert("No Saved game");
     }
@@ -71,16 +71,16 @@ function episode1(){
 function episode2(){
 	var EPISODEObj = InternetExplorer ? EPISODE : document.EPISODE;
     var SaveGame = GetCookie("ARC2");
-    
+
 	if (SaveGame == "1") {
 		EPISODEObj.GotoFrame(939);
 	}
 	else if (SaveGame == "2") {
 		EPISODEObj.GotoFrame(942);
-	}	
+	}
 	else if (SaveGame == "3") {
 		EPISODEObj.GotoFrame(945);
-	}	
+	}
 	else if (SaveGame == "4")
 		{
 		EPISODEObj.GotoFrame(948);
@@ -92,7 +92,7 @@ function episode2(){
 	else if (SaveGame == "6")
 	{
 		EPISODEObj.GotoFrame(954);
-	}	
+	}
  	else {
       alert("No Saved game");
     }
@@ -101,16 +101,16 @@ function episode2(){
 function episode5(){
 	var EPISODEObj = InternetExplorer ? EPISODE : document.EPISODE;
     var SaveGame = GetCookie("ARC5");
-    
+
 	if (SaveGame == "1") {
 		EPISODEObj.GotoFrame(934);
 	}
 	else if (SaveGame == "2") {
 		EPISODEObj.GotoFrame(937);
-	}	
+	}
 	else if (SaveGame == "3") {
 		EPISODEObj.GotoFrame(940);
-	}	
+	}
 	else if (SaveGame == "4")
 		{
 		EPISODEObj.GotoFrame(943);
@@ -122,7 +122,7 @@ function episode5(){
 	else if (SaveGame == "6")
 	{
 		EPISODEObj.GotoFrame(949);
-	}	
+	}
  	else {
       alert("No Saved game");
     }
@@ -177,7 +177,7 @@ function set_episode() {
     const urlParams = new URLSearchParams(queryString);
     var episode = urlParams.get('episode');
 	var EPISODEObj = document.EPISODE;
-	var url = "http://arcaneonlinegame.epizy.com/Arcane2/arcane/swf/";
+	var url = "http://ormhewitt.github.io/Arcane2/arcane/swf/";
 	if (episode == "recap") {
 		url = url + "recap.swf";
 	}
@@ -185,7 +185,7 @@ function set_episode() {
 		url = url + "prologue.swf";
 	}
 	else if (episode == "current") {
-		url = "http://arcaneonlinegame.epizy.com/Arcane2/arcane/swf/Arc2Episode8.swf";
+		url = "http://ormhewitt.github.io/Arcane2/arcane/swf/Arc2Episode8.swf";
 	}
 	else {
 		var episodeNumber = episode.substring(15);
@@ -197,7 +197,7 @@ function set_episode() {
 <body bgcolor="000000" onload="set_episode()">
 <center>
 <div class="column left">
-	<embed src="http://arcaneonlinegame.epizy.com/Arcane2/arcane/generator/playpage.swf" name="launcher" quality="high" pluginspage="http://www2.warnerbros.com/pages/entry/download_flash.jsp?frompage=main" type="application/x-shockwave-flash" width="300" height="600" bgcolor="#000000"></embed>
+	<embed src="http://ormhewitt.github.io/Arcane2/arcane/generator/playpage.swf" name="launcher" quality="high" pluginspage="http://www2.warnerbros.com/pages/entry/download_flash.jsp?frompage=main" type="application/x-shockwave-flash" width="300" height="600" bgcolor="#000000"></embed>
 </div>
 <div class="column right">
 	<embed name="EPISODE" quality="high" pluginspage="http://www2.warnerbros.com/pages/entry/download_flash.jsp?frompage=main" type="application/x-shockwave-flash"  width="900" height="655" bgcolor="#000000"></embed>

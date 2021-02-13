@@ -5,7 +5,7 @@
 	<param name="menu" value="true">
 	<param name="quality" value="high">
 	<param name="bgcolor" value="#000000">
-	<embed src="http://arcaneonlinegame.epizy.com/arcane/swf/ArcaneVideoFinal.swf" quality="high" pluginspage="http://www2.warnerbros.com/pages/entry/download_flash.jsp?frompage=main" type="application/x-shockwave-flash" height="795" width="1092" bgcolor="#000000"></embed>
+	<embed src="swf/ArcaneVideoFinal.swf" quality="high" pluginspage="http://www2.warnerbros.com/pages/entry/download_flash.jsp?frompage=main" type="application/x-shockwave-flash" height="795" width="1092" bgcolor="#000000"></embed>
 </object>
 </center>
 </body>
